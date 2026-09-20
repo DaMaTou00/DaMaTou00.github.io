@@ -1,12 +1,12 @@
 ---
-title: 文章标题
+title: stager拉动stage分析
 date: 2026-09-20 23:47:00
 tags:
   - Cobaltstrike原生马分析
 categories:
   - 木马分析
 ---
-# stager 拉动stage分析
+# stager拉动stage分析
 
 通过分析前面的stager，已经获取到解密后的shellcode，下面是对shellcode的分析内容。
 
