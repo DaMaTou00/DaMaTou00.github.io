@@ -1,0 +1,103 @@
+# Hexo 站点配置
+# 文档：https://hexo.io/zh-cn/docs/configuration
+
+# ---------- 站点 ----------
+title: 一个小糖人
+subtitle: ''
+description: '随手记录一些想留下的东西'
+keywords:
+author: jojj
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# ---------- 网址 ----------
+url: https://DaMaTou00.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# ---------- 目录 ----------
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# ---------- 写作 ----------
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# ---------- 首页 ----------
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+
+# ---------- 分类与标签 ----------
+default_category: uncategorized
+category_map:
+tag_map:
+
+# ---------- 元数据 ----------
+meta_generator: true
+
+# ---------- 日期格式 ----------
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# ---------- 分页 ----------
+per_page: 8
+pagination_dir: page
+
+# ---------- 包含 / 排除 ----------
+include:
+exclude:
+ignore:
+
+# ---------- 站内搜索 ----------
+search:
+  path: local-search.xml
+  field: post
+  content: true
+  format: html
+
+# ---------- 主题 ----------
+theme: fluid
+
+# ---------- 部署 ----------
+# 本站使用 GitHub Actions 自动部署，无需在此配置。
+# 若想改回本地一条命令部署，取消下面注释并执行 npm i -D hexo-deployer-git
+# deploy:
+#   type: git
+#   repo: https://github.com/DaMaTou00/DaMaTou00.github.io.git
+#   branch: gh-pages
+deploy:
+  type: ''
