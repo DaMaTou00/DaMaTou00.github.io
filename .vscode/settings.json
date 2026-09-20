@@ -1,0 +1,29 @@
+{
+  // ---------- 编辑体验 ----------
+  "editor.wordWrap": "on",
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "markdown.preview.fontSize": 15,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  // ---------- 粘贴截图：自动存进 source/img 并插入 /img/ 路径 ----------
+  "pasteImage.path": "${projectRoot}/source/img",
+  "pasteImage.basePath": "${projectRoot}/source",
+  "pasteImage.prefix": "/",
+  "pasteImage.namePrefix": "${currentFileNameWithoutExt}-",
+  "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+  "pasteImage.showFilePathConfirmInputBox": false,
+
+  // ---------- Hexo 相关 ----------
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/public": true,
+    "**/db.json": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/public/**": true
+  }
+}

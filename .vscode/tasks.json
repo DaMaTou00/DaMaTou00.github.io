@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "新建文章",
+      "type": "shell",
+      "command": "npx hexo new \"${input:postTitle}\"",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "本地预览",
+      "type": "shell",
+      "command": "npx hexo server -p 4000",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "group": "build"
+    },
+    {
+      "label": "生成静态文件",
+      "type": "shell",
+      "command": "npx hexo clean && npx hexo generate",
+      "problemMatcher": []
+    },
+    {
+      "label": "发布到 GitHub",
+      "type": "shell",
+      "command": "git add -A && git commit -m \"${input:commitMsg}\" && git push",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "postTitle",
+      "type": "promptString",
+      "description": "文章标题",
+      "default": ""
+    },
+    {
+      "id": "commitMsg",
+      "type": "promptString",
+      "description": "提交说明",
+      "default": "update posts"
+    }
+  ]
+}
